@@ -1,0 +1,104 @@
+body{
+    background-color: rgb(39, 117, 227);
+    color: aliceblue;
+    background-blend-mode: overlay;
+}
+.nav{
+    justify-content: space-between;
+    align-items: center;
+}
+.links{
+    gap: 10px;
+    font-size: 1.0rem;
+}
+ul>li{
+    list-style: none;
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.flex{
+    display: flex;
+}
+.logo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:3.0rem;
+}
+button{
+    padding: 20px 30px;
+    min-width: 100px;
+    border-radius:5px 10px;
+    border: none;
+    margin: 8px;
+}
+.sec-btn{
+    background-color: rgb(32, 143, 246);
+    color: white;
+}
+.try-btn{
+    background-color: rgb(231, 53, 53);
+    color: white;
+}
+.pri-btn{
+    color: rgb(0, 123, 255);
+}
+.right{
+    
+    width: 50%;
+    justify-content:center;
+    align-items: center;
+
+}
+.left{
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+    
+
+}
+.left>div{
+    width: fit-content;
+    margin: auto;
+}
+.landing{
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
+@media screen and (max-width: 750px){
+    body{
+
+    }
+.landing{
+    flex-direction: column-reverse;
+    justify-content: center;
+
+}
+.left,.right{
+    width: 60%;
+
+
+}
+.nav{
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+.links{
+    justify-content: center;
+    padding: 0;
+}
+}
+@media screen and (max-width: 350px){
+
+    .links{
+        overflow-x:scroll;
+        scroll-margin: 10px;
+        width: 100%;
+
+    }
+    .links>li>a{
+        text-wrap: nowrap;
+    }
+}
